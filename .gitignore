@@ -1,0 +1,10 @@
+# JAVA
+.metadata
+.settings
+.bin
+.project
+.classpath
+*.log
+*.zip
+*.class
+*.swp

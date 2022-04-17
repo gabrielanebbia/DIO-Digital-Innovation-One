@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox - Flex</title>
+  <style>
+    .flex-container {
+      display: flex;
+      max-width: 350px;
+      border: 2px dotted gray;
+      margin-bottom: 10px;
+    }
+    
+    .item {
+      background-color: palegreen;
+      font-size: 24px;
+      text-align: center;
+      margin: 5px;
+    }
+
+    .flex-1 {
+      flex: 1;
+      /* grow = 1, shrink = 1, basis = 0 */
+    }
+
+    .flex-2 {
+      flex: 2;
+      /* grow = 2, shrink = 1, basis = 0 */
+    }
+
+    .width {
+      width: 200px;
+    }
+
+    .min-width {
+      width: 200px;
+      min-width: 150px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Praticando - Flex</h1>
+  <h2>flex: 1 (grow = 1, shrink = 1, basis = 0)</h2>
+  <div class="flex-container">
+    <div class="item flex-1">A</div>
+    <div class="item flex-1">BBB</div>
+    <div class="item flex-1">CC</div>
+    <div class="item flex-1">D</div>
+    <div class="item flex-1">EF</div>
+  </div>
+  <h2>flex: 2 (grow = 2, shrink = 1, basis = 0)</h2>
+  <div class="flex-container">
+    <div class="item flex-2">A</div>
+    <div class="item flex-2">BBB</div>
+    <div class="item flex-2">CC</div>
+    <div class="item flex-2">D</div>
+    <div class="item flex-2">EF</div>
+  </div>
+  <h2>flex: mix</h2>
+  <div class="flex-container">
+    <div class="item flex-1">A</div>
+    <div class="item flex-2">BBB</div>
+    <div class="item flex-2">CC</div>
+    <div class="item flex-1">D</div>
+    <div class="item flex-1">EF</div>
+  </div>
+  <h2>width ignorado com o basis = 0, usando flex: 1</h2>
+  <div class="flex-container">
+    <div class="item flex-1 width">A</div>
+    <div class="item flex-1 width">BBB</div>
+    <div class="item flex-1 width">CC</div>
+    <div class="item flex-1 width">D</div>
+    <div class="item flex-1 width">EF</div>
+  </div>
+  <h2>min-width com o basis = 0, usando flex: 1</h2>
+  <p>Tenta atender ao valor mínimo de width</p>
+  <div class="flex-container">
+    <div class="item flex-1 min-width">A</div>
+    <div class="item flex-1 min-width">BBB</div>
+    <div class="item flex-1 min-width">CC</div>
+    <div class="item flex-1 min-width">D</div>
+    <div class="item flex-1 min-width">EF</div>
+  </div>
+</body>
+</html>

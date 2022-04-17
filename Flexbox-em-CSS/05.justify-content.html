@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox - Justify Container</title>
+  <style>
+    p {
+      color: gray;
+    }
+
+    .flex-container {
+      display: flex;
+      margin: 0;
+      border: 2px dotted gray;
+      max-width: 400px;
+    }
+
+    .item {
+      background-color: coral;
+      margin: 5px;
+      text-align: center;
+      color: black;
+      width: 60px;
+      line-height: 50px;
+    }
+
+    .flex-start {
+      justify-content: flex-start;
+
+    }
+
+    .flex-end {
+      justify-content: flex-end;
+    }
+
+    .center {
+      justify-content: center;
+    }
+
+    .space-between {
+      justify-content: space-between;
+    }
+
+    .space-around {
+      justify-content: space-around;
+    }
+
+    .space-evenly {
+      justify-content: space-evenly;
+    }
+
+    .column {
+      flex-direction: column;
+      min-height: 200px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Praticando - justify-container</h1>
+  <p>Obs: caso os itens estejam ocupando 100% do container não faz sentido usar essa propriedade</p>
+  <h2>row</h2>
+  <h3>default - flex-start</h3>
+  <div class="flex-container flex-start">
+    <div class="item">item 1</div>
+    <div class="item">item 2</div>
+    <div class="item">item 3</div>
+  </div>
+  <h3>flex-end</h3>
+  <div class="flex-container flex-end">
+    <div class="item">item 1</div>
+    <div class="item">item 2</div>
+    <div class="item">item 3</div>
+  </div>
+  <h3>center</h3>
+  <div class="flex-container center">
+    <div class="item">item 1</div>
+    <div class="item">item 2</div>
+    <div class="item">item 3</div>
+  </div>
+  <h3>space-between</h3>
+  <div class="flex-container space-between">
+    <div class="item">item 1</div>
+    <div class="item">item 2</div>
+    <div class="item">item 3</div>
+  </div>
+  <h3>space-around</h3>
+  <div class="flex-container space-around">
+    <div class="item">item 1</div>
+    <div class="item">item 2</div>
+    <div class="item">item 3</div>
+  </div>
+  <h3>space-evenly</h3>
+  <div class="flex-container space-evenly">
+    <div class="item">item 1</div>
+    <div class="item">item 2</div>
+    <div class="item">item 3</div>
+  </div>
+  <h2>column</h2>
+  <h3>flex-start</h3>
+  <div class="flex-container flex-start column">
+    <div class="item">item 1</div>
+    <div class="item">item 2</div>
+    <div class="item">item 3</div>
+  </div>
+  <h3>flex-end</h3>
+  <div class="flex-container flex-end column">
+    <div class="item">item 1</div>
+    <div class="item">item 2</div>
+    <div class="item">item 3</div>
+  </div>
+  <h3>center</h3>
+  <div class="flex-container center column">
+    <div class="item">item 1</div>
+    <div class="item">item 2</div>
+    <div class="item">item 3</div>
+  </div>
+  <h3>space-between</h3>
+  <div class="flex-container space-between column">
+    <div class="item">item 1</div>
+    <div class="item">item 2</div>
+    <div class="item">item 3</div>
+  </div>
+  <h3>space-around</h3>
+  <div class="flex-container space-around column">
+    <div class="item">item 1</div>
+    <div class="item">item 2</div>
+    <div class="item">item 3</div>
+  </div>
+  <h3>space-evenly</h3>
+  <div class="flex-container space-evenly column">
+    <div class="item">item 1</div>
+    <div class="item">item 2</div>
+    <div class="item">item 3</div>
+  </div>
+</body>
+</html>

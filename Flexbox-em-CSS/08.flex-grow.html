@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox - Flex grow</title>
+  <style>
+    .flex-container {
+      display: flex;
+      border: 2px dotted gray;
+      max-width: 500px;
+      margin-bottom: 20px;
+      justify-content: center; /* funciona apenas em elementos com flex-grow: 0*/
+    }
+
+    .item {
+      background-color: blue;
+      margin: 5px;
+      padding: 10px;
+      text-align: center;
+      color: aliceblue;
+    }
+
+    .fg-0 {
+      flex-grow: 0;
+    }
+
+    .fg-1 {
+      flex-grow: 1;
+    }
+
+    .fg-2 {
+      flex-grow: 2;
+    }
+
+    .fg-3 {
+      flex-grow: 3;
+    }
+  </style>
+</head>
+<body>
+  <h1>Praticando - Flex-grow</h1>
+  <p>Define a proporcionalidade de crescimento dos itens, respeitando o tamanho de seus conteúdos internos.</p>
+  <h2>flex-grow:0</h2>
+  <div class="flex-container">
+    <div class="item fg-0">AAA</div>
+    <div class="item fg-0">B</div>
+    <div class="item fg-0">C</div>
+    <div class="item fg-0">D</div>
+  </div>
+  <h2>flex-grow:1</h2>
+  <div class="flex-container">
+    <div class="item fg-1">AAA</div>
+    <div class="item fg-1">B</div>
+    <div class="item fg-1">C</div>
+    <div class="item fg-1">D</div>
+  </div>
+  <h2>flex-grow:2</h2>
+  <div class="flex-container">
+    <div class="item fg-2">AAA</div>
+    <div class="item fg-2">B</div>
+    <div class="item fg-2">C</div>
+    <div class="item fg-2">D</div>
+  </div>
+  <h2>flex-grow:3</h2>
+  <div class="flex-container">
+    <div class="item fg-3">AAA</div>
+    <div class="item fg-3">B</div>
+    <div class="item fg-3">C</div>
+    <div class="item fg-3">D</div>
+  </div>
+  <h2>flex-grow alternados</h2>
+  <div class="flex-container">
+    <div class="item fg-1">1</div>
+    <div class="item fg-2">2</div>
+    <div class="item fg-3">3</div>
+    <div class="item fg-1">1</div>
+  </div>
+  <h2>flex-grow:1 e conteúdos alternados</h2>
+  <div class="flex-container">
+    <div class="item fg-1">AAAAAA</div>
+    <div class="item fg-1">BBB</div>
+    <div class="item fg-1">CC</div>
+    <div class="item fg-1">D</div>
+  </div>
+</body>
+</html>

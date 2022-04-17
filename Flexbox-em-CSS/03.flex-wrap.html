@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox - Flex wrap</title>
+  <style>
+    .flex-container {
+      display: flex;
+      height: 150px;
+      border: 5px dotted black;
+      max-width: 310px;
+      /* flex-direction: column; */
+    }
+
+    .item {
+      font-size: 24px;
+      height: 50%;
+      text-align: center;
+      color: white;
+      line-height: 50px;
+      min-width: 100px;
+    }
+
+    .nowrap {
+      flex-wrap: nowrap; /* valor padrão */
+    }
+
+    .wrap {
+      flex-wrap: wrap;
+    }
+
+    .wrap-reverse {
+      flex-wrap: wrap-reverse;
+    }
+
+    .yellow {
+      background-color: darkgoldenrod;
+    }
+
+    .black {
+      background-color: black;
+    }
+
+    .pink {
+      background-color: pink;
+    }
+
+    .grey {
+      background-color: darkgrey;
+    }
+
+  </style>
+</head>
+<body>
+  <h1>Praticando - flex-wrap</h1>
+  <h2>Nowrap</h2>
+  <div class="flex-container nowrap">
+    <div class="item yellow">1</div>
+    <div class="item black">2</div>
+    <div class="item pink">3</div>
+    <div class="item grey">4</div>
+  </div>
+  <h2>wrap</h2>
+  <div class="flex-container wrap">
+    <div class="item yellow">1</div>
+    <div class="item black">2</div>
+    <div class="item pink">3</div>
+    <div class="item grey">4</div>
+  </div>
+  <h2>wrap-reverse</h2>
+  <div class="flex-container wrap-reverse">
+    <div class="item yellow">1</div>
+    <div class="item black">2</div>
+    <div class="item pink">3</div>
+    <div class="item grey">4</div>
+  </div>
+</body>
+</html>

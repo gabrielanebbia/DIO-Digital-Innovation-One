@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox - Flex Basis</title>
+  <style>
+    .flex-container {
+      display: flex;
+      max-width: 300px;
+      border: 2px dotted gray;
+    }
+    
+    .item {
+      background-color: coral;
+      text-align: center;
+      margin: 5px;
+    }
+    
+    .basis-auto {
+      flex-basis: auto;
+    }
+    
+    .basis-0 {
+      flex-basis: 0;
+    }
+    
+    .basis-w100 {
+      flex-basis: 100px;
+    }
+
+    .flex-grow-0 {
+      flex-grow: 0;
+    }
+
+    .flex-grow-1 {
+      flex-grow: 1;
+    }
+
+    .flex-grow-2 {
+      flex-grow: 2;
+    }
+  </style>
+</head>
+<body>
+  <h1>Praticando - flex-basis</h1>
+  <p>Propriedade que estabelece o tamanho inicial do item antes das distribuição de espaço restante dentro dele, usando como base o conteúdo interno disposto.</p>
+  <h2>Default - auto</h2>
+  <div class="flex-container">
+    <div class="item basis-auto">A</div>
+    <div class="item basis-auto">BBB</div>
+    <div class="item basis-auto">C</div>
+    <div class="item basis-auto">DEF</div>
+  </div>
+  <h2>flex-basis: auto e flex-grow: 1 e 2</h2>
+  <div class="flex-container">
+    <div class="item basis-auto flex-grow-1">A</div>
+    <div class="item basis-auto flex-grow-1">BBB</div>
+    <div class="item basis-auto flex-grow-1">C</div>
+    <div class="item basis-auto flex-grow-2">DEF</div>
+  </div>
+  <h2>flex-basis: 0</h2>
+  <div class="flex-container">
+    <div class="item basis-0 flex-grow-1">A</div>
+    <div class="item basis-0 flex-grow-1">BBB</div>
+    <div class="item basis-0 flex-grow-1">C</div>
+    <div class="item basis-0 flex-grow-2">DEF</div>
+  </div>
+  <h2>flex-basis: 100px</h2>
+  <div class="flex-container">
+    <div class="item basis-w100 flex-grow-1">AAAAAA</div>
+    <div class="item basis-w100 flex-grow-1">BBB</div>
+    <div class="item basis-w100 flex-grow-1">C</div>
+    <div class="item basis-w100 flex-grow-2">DEF</div>
+  </div>
+</body>
+</html>

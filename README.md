@@ -4,4 +4,4 @@
 
 - [JAVA](./JAVA/)
   - [Primeiros passos](./JAVA/primeiro-programa-java/)
-- [Flexbox em CSS](./Flexbox-com-CSS/)
+- [Flexbox em CSS](./Flexbox-em-CSS/)

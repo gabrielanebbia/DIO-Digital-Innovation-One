@@ -8,3 +8,5 @@
 *.zip
 *.class
 *.swp
+*.idea
+*.iml

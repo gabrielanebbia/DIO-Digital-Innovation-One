@@ -1,10 +1,22 @@
-# JAVA
-.metadata
-.settings
-.bin
+# JAVA #
+*.class
+
+# Eclipse #
 .project
+.metadata
+/bin
+*.swp
+.settings
 .classpath
 *.log
 *.zip
-*.class
-*.swp
+
+# IntelliJ #
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# Gradle #
+.gradle
+/build/

@@ -4,4 +4,5 @@
 
 - [JAVA](./JAVA/)
   - [Primeiros passos](./JAVA/primeiro-programa-java/)
+  - [Desenvolvimento Básico em JAVA](./JAVA/desenvolvimento-basico-em-java/)
 - [Flexbox em CSS](./Flexbox-em-CSS/)

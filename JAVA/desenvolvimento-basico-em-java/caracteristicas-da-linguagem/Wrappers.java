@@ -1,9 +1,5 @@
 public class Wrappers {
     public static void main(String[] args) {
-        // Autoboxing - usando class no java.lang
-        // Permite novas formas de trabalhar com os valores
-        // Diferente dos inteiros agora aceita valor igual a null
-
         Byte b = 127;   //byte
         Byte b2 = -128;
         Byte nullByte = null;
@@ -34,3 +30,9 @@ public class Wrappers {
         Boolean bo4 = Boolean.valueOf("true");   //OK
     }
 }
+
+// Autoboxing = Passa o valor puro para um tipo de objeto
+// Usando class no java.lang
+// Recurso de conversão automática de tipos de dados primitivos em seu objeto equivalente
+// Permite novas formas de trabalhar com os valores
+// Diferente dos inteiros agora aceita valor igual a null
